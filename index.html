@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="/css/reset.css"> -->
+  <link rel="stylesheet" href="/dist/css/lightbox.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous">
+  <script src="/js/script.js" defer></script>
+
+  <title>Index</title> 
+</head>
+<body>
+
+    <div id="before-nav">
+        <i class="fa-solid fa-bars fa-lg"></i>
+    </div>
+    <nav class="drawer_content">
+        <div id="nav-top">
+            <i class="fa-solid fa-xmark fa-lg"></i>
+        </div>
+        
+        <div id="nav-bottom">
+            <ul>
+                <li class="item-1 active"><div class="icon"></div><a href="index.html">Index<div class="active-icon"></div></a></li>
+                <li class="item-2"><div class="icon"></div><a href="survey.html">Survey</a></li>
+                <li class="item-3"><div class="icon"></div><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div id="keyboard">
+            <div id="first-content">
+                <h2>What keyboard is best for you?</h2>
+                <br>
+                <a class="button" href="/survey.html">Find Out</a>
+            </div>
+        </div>
+        <h2>My Favorite Keyboards</h2>
+
+        <div id="favorite">
+            <a href="images/thermal_darling.jpg" target="_blank" data-lightbox="favorite" data-title="Rama Thermal">
+                <img src="/images/thermal_darling.jpg" alt="Silver keyboard with pink keycaps">
+                <h3>Rama Thermal</h3>
+            </a>
+            <a href="images/bauer_lite.webp" target="_blank" data-lightbox="favorite" data-title="Baur Lite">
+                <img src="/images/bauer_lite.webp" alt="Polycarbonate keyboard with grey keycaps">
+                <h3>Omnitype Baur Lite</h3>
+            </a>
+            <a href="images/wampus_alice.png" target="_blank" data-lightbox="favorite" data-title="Wampus">
+                <img src="/images/wampus_alice.png" alt="White keyboard">
+                <h3>zoo Wampus</h3>
+            </a>
+            <a href="images/grid650.jpg" target="_blank" data-lightbox="favorite" data-title="Grid650">
+                <img src="/images/grid650.jpg" alt="White keyboard with purple keycaps">
+                <h3>Grid650</h3>
+            </a>
+            <a href="images/haitun40.jpg" target="_blank" data-lightbox="favorite" data-title="Haitun60">
+                <img src="/images/haitun40.jpg" alt="White keyboard with white keycaps">
+                <h3>Jacky Haitun60</h3>
+            </a>
+        </div>
+        <br>
+        <!-- <div id="switches">
+            <h2>Comming Soon</h2>
+            <h3>What switch is best for you?</h3>
+        </div>
+        <div id="vendors">
+            <h2>Vendors</h2>
+            <a target="_blank" href="https://novelkeys.com/"><img src="/images/novelkeys_logo.webp" alt="novelkeys-logo"></a>
+            <a target="_blank" href="https://omnitype.com/"><img src="/images/omnitype_logo.webp" alt="omnitype-logo"></a>
+            <a target="_blank" href="https://drop.com/home"><img src="/images/drop_logo.jpg" alt="drop-logo"></a>
+            <a target="_blank" href=""><img src="" alt=""></a>
+        </div> -->
+
+    </main>
+    <script src="/dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 1000,
+            'wrapAround': true,
+        })
+    </script>
+</body>
+</html>
