@@ -481,7 +481,7 @@ var keyboard_dict = {
         //     "picture": "temp"
         // },
     },
-    "TKL%": {
+    "TKL": {
         "ANSI WKL Aluminum": {
             "name": "MATRIX 8XV 3.0",
             "picture": "https://novelkeys.com/cdn/shop/products/Keycap_Tiles_v1.0.1_template_1_68a8d22b-1278-419b-9a4e-1d28c8ae0cde_1512x.jpg?v=1678799328"
@@ -514,10 +514,10 @@ var keyboard_dict = {
         //     "name": "",
         //     "picture": ""
         // },
-        // "ANSI None Injection Mold": {
-        //     "name": "Monokei Standard - Yuji Edition",
-        //     "picture": "https://novelkeys.com/cdn/shop/files/jjk-product-listing-yuji-01_7d6335ba-ca12-44f8-ba7a-ca6c87f285a7_1512x.jpg?v=1690391153"
-        // },
+        "ANSI None Injection Mold": {
+            "name": "Monokei Standard - Yuji Edition",
+            "picture": "https://novelkeys.com/cdn/shop/files/jjk-product-listing-yuji-01_7d6335ba-ca12-44f8-ba7a-ca6c87f285a7_1512x.jpg?v=1690391153"
+        },
 
 
         "ISO WKL Aluminum": {
