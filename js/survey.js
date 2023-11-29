@@ -34,11 +34,11 @@ var keyboard_dict = {
         //     "picture": "/images/not_available"                    
         // },
         "ANSI HHKB Aluminum": {
-            "name": "Pandora60",
-            "picture": "https://pearlboards.net/cdn/shop/products/GreenAlu553C-SS_Back_550x.jpg"
+            "name": "Neuron",
+            "picture": "https://www.keebtalk.com/uploads/db8059/original/2X/7/7497c37272cb098379b5be0e341899b009c3fd18.jpeg"
         },
         "ANSI HHKB Polycarbonate": {
-            "name": "Neuro",
+            "name": "Neuron",
             "picture": "https://www.keebtalk.com/uploads/db8059/original/2X/6/6a64232404f5bba4bb9128cf8278d4a118d43d1e.jpeg"
         },
         // "ANSI HHKB Injection Mold": {

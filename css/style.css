@@ -44,7 +44,7 @@ nav {
     height: 100%;
     max-width: 450px;
     width: 100%;
-    background: white;
+    background: rgb(248,248,248);
     transform: translate3d(-100%, 0, 0);
     transition: transform 0.3s ease, visibility 0s linear 1s;
     display: flex;    
@@ -114,10 +114,21 @@ body {
 }
 
 
-/* Index (keyboard) */
+/* Index */
+div#surveys {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 div#keyboard {
     height: 450px;
     background: url(../images/index_background.webp) no-repeat center;
+    background-size: cover;
+}
+
+div#switches {
+    height: 450px;
+    background: url(../images/index_background2.webp) no-repeat center;
     background-size: cover;
 }
 
@@ -132,8 +143,9 @@ div#first-content {
     flex-direction: column;
 }
 
-div#keyboard h2 {
+div.large h2 {
     color: white;
+    text-align: center;
 }
 
 .button {
@@ -143,10 +155,6 @@ div#keyboard h2 {
     border: 1px solid black;
     text-decoration: none;
     padding: 10px 40px;
-}
-
-div#keyboard h2, div#switches h2, div#vendors h2 {
-    text-align: center;
 }
 
 main > h2 {
@@ -182,7 +190,7 @@ main#survey {
 }
 
 div#content {
-    background-color: white;
+    background-color: rgb(248,248,248);
     /* backdrop-filter: blur(1px); */
     border-radius: 40px;
     margin: auto;
@@ -324,69 +332,40 @@ div#result-compiled h3 {
     }
 
     /* Nav bar */
-    ul {
-        margin-block-start: 0px;
-        margin-block-end: 0px;
-        padding-inline-start: 0px;
-    }
-
     li {
-        display: block;
+        display: inline-block;
         padding: 20px;
-        border: 2px solid black;
-        border-top: 0px;
-        border-left: 0px;
-        border-right: 0px;
+        border: none;
     }
 
     li.item-1 {
-        border: 2px solid black;
-        border-left: 0px;
-        border-right: 0px;
-    }
-
-    nav a {
-        text-decoration: none;
-        color: black;
+        border: none;
     }
 
     nav {
-        border: 2px solid black;
+        border: none;
     }
 
-    .is-open.drawer_content {
-        visibility: visible;
+    nav ul {
+        display: block;
+        width: auto;
+        text-align: right;
+    }
+
+    nav.is-open.drawer_content + main {
+        filter: unset;
+    }
+
+
+    nav.drawer_content {
+        display: block;
+        visibility: unset;
+        position: unset;
+        height: auto;
         transform: translate3d(0, 0, 0);
         transition: transform 0.3s ease;
-    }
-
-    .drawer_content {
-        position: fixed;
-        visibility: hidden;
-        z-index: 2000;
-        top: 0;
-        left: 0;
-        height: 100%;
-        max-width: 450px;
         width: 100%;
-        background: white;
-        transform: translate3d(-100%, 0, 0);
-        transition: transform 0.3s ease, visibility 0s linear 1s;
-        display: flex;    
-        flex-direction: column;
-    }
-
-    div.active-icon {
-        display: inline-block;
-        width: 5px;
-        height: 5px;
-        border: 2px solid black;
-        background-color: black ;
-        border-radius: 100%;
-        margin-left: 10px;
-        animation-name: icon-transformation;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
+        max-width: unset;    
     }
 
     @keyframes icon-transformation {
@@ -395,39 +374,11 @@ div#result-compiled h3 {
         100% {border-radius: 90%;}
     }
 
-    .icon {
-        display: none;
-        visibility: hidden;
-        width: 5px;
-        height: 5px;
-        border: 2px solid black;
-        background-color: black;
-        border-radius: 100%;
-        margin-left: 10px;
-    }
-
-    li:hover .icon {
-        display: inline-block;
-        visibility: visible;
-        animation-name: icon-transformation;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-        margin-right: 10px;
-    }
-
-    nav.is-open.drawer_content + main {
-        filter: blur(8px);
-    }
-
     div#before-nav {
-        margin: 0px 10px;
+        display: none;
     }
 
-    i.fa-bars {
-        margin: 20px auto;
+    div#nav-top {
+        display: none;
     }
-
-    i.fa-xmark {
-        margin: 0px 0px 0px 95%;
-}
 }
