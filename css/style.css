@@ -70,6 +70,26 @@ div.active-icon {
     100% {border-radius: 90%;}
 }
 
+.icon {
+    display: none;
+    visibility: hidden;
+    width: 5px;
+    height: 5px;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+li:hover .icon {
+    display: inline-block;
+    visibility: visible;
+    animation-name: icon-transformation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    margin-right: 10px;
+}
+
 nav.is-open.drawer_content + main {
     filter: blur(8px);
 }
@@ -251,7 +271,6 @@ body {
 #about-main h2 {
     text-align: center;
     position: relative;
-    top: 50%;
     color: white;
 }
 
@@ -293,6 +312,10 @@ div#vendors a img {
 
 .description {
     padding: 20px;
+}
+
+div#result-compiled h3 {
+    margin: 30px;
 }
     
 @media (prefers-reduced-motion: reduce) {

@@ -238,10 +238,10 @@ var keyboard_dict = {
         //     "name": "temp",
         //     "picture": "temp"
         // },
-        // "Alice None Aluminum": {
-        //     "name": "temp",
-        //     "picture": "temp"
-        // },
+        "Alice None Aluminum": {
+            "name": "Boomerang",
+            "picture": "https://lh7-us.googleusercontent.com/mhxUW-MBDIhtvROHwAPrZiP5VzRRgLE7GQEt0aktPPPvohXtYIqBf2nJlMfRQhZI9MRpVgf1lz3QLjKiVwei170NzT8OnxIjJeXNFAQVO0kOqqrKfrt7E0_ey1nCmKnpKMOFtGRJ7GyocrJmbrxLsSacOkwTbA"
+        },
         // "Alice None Polycarbonate": {
         //     "name": "temp",
         //     "picture": "temp"
@@ -268,10 +268,10 @@ var keyboard_dict = {
             "name": "Angry Miao AM 65",
             "picture": "https://ae01.alicdn.com/kf/Sd356a7db82904e4b951af829841e6615H/Angry-Miao-Am-65-Less-Mechanical-Keyboard-HHKB-Custom-Hotswap-Pc-Gaming-Wireless-Bluetooth-RGB-Backlit.jpg"
         },
-        "ANSI HHKB Polycarbonate": {
-            "name": "",
-            "picture": ""
-        },
+        // "ANSI HHKB Polycarbonate": {
+        //     "name": "",
+        //     "picture": ""
+        // },
         // "ANSI HHKB Injection Mold": {
         //     "name": "",
         //     "picture": ""
@@ -314,10 +314,10 @@ var keyboard_dict = {
         //     "name": "temp",
         //     "picture": "temp"
         // },
-        // "ISO None Aluminum": {
-        //     "name": "Keychron K6",
-        //     "picture": "https://mechanicalkeyboards.com/shop/images/products/large_KeychronK6-W-UKEZ6_main.jpg"
-        // },
+        "ISO None Aluminum": {
+            "name": "Zoom65",
+            "picture": "https://zoom65.com/assets/img/feature-multi-3.jpg"
+        },
         // "ISO None Polycarbonate": {
         //     "name": "temp",
         //     "picture": "temp"
@@ -429,10 +429,10 @@ var keyboard_dict = {
         //     "name": "temp",
         //     "picture": "temp"
         // },
-        // "ISO None Aluminum": {
-        //     "name": "temp",
-        //     "picture": "temp"
-        // },
+        "ISO None Aluminum": {
+            "name": "Mode Sonnet",
+            "picture": "https://knitpick.me/images/2022-12-27/sonnet-DCS.jpg"
+        },
         // "ISO None Polycarbonate": {
         //     "name": "temp",
         //     "picture": "temp"
@@ -583,10 +583,10 @@ var keyboard_dict = {
         //     "name": "temp",
         //     "picture": "temp"
         // },
-        // "Alice None Aluminum": {
-        //     "name": "temp",
-        //     "picture": "temp"
-        // },
+        "Alice None Aluminum": {
+            "name": "LZ ErGO",
+            "picture": "https://geekhack.org/index.php?action=dlattach;topic=83971.0;attach=144918;image"
+        },
         // "Alice None Polycarbonate": {
         //     "name": "temp",
         //     "picture": "temp"
