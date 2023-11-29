@@ -110,11 +110,11 @@ i.fa-xmark {
 body {
     background-color: rgb(248,248,248);
     font-family: interstate, sans-serif;
+    font-size: 0.9rem;
 }
 
 
 /* Index (keyboard) */
-
 div#keyboard {
     height: 450px;
     background: url(../images/index_background.webp) no-repeat center;
@@ -145,8 +145,6 @@ div#keyboard h2 {
     padding: 10px 40px;
 }
 
-
-
 div#keyboard h2, div#switches h2, div#vendors h2 {
     text-align: center;
 }
@@ -161,7 +159,7 @@ div#favorite {
     margin: auto;
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 div#favorite div {
@@ -176,18 +174,9 @@ div#favorite a{
     color: black;
 }
 
-
-
-
-
-
-
 /* Survey */
-
-
 main#survey {
     background: url(../images/mechanical_switches.webp);
-    
     background-size: 25%;
     padding: 20px;
 }
@@ -243,20 +232,12 @@ div.active-card {
 
 
 div#result-compiled img {
-    width: 400px;
+    max-width: 400px;
+    width: 80%;
     aspect-ratio: auto;
 }
 
-
-
-
-
-
-
-
-
 /* About Us */
-
 body {
     margin: 0px;
 }
@@ -327,4 +308,126 @@ div#result-compiled h3 {
         grid-template-columns: 1fr 1fr;
     }
 
+    div#favorite {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media (min-width: 992px) {
+    div#favorite {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    div#cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* Nav bar */
+    ul {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        padding-inline-start: 0px;
+    }
+
+    li {
+        display: block;
+        padding: 20px;
+        border: 2px solid black;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+    }
+
+    li.item-1 {
+        border: 2px solid black;
+        border-left: 0px;
+        border-right: 0px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+    }
+
+    nav {
+        border: 2px solid black;
+    }
+
+    .is-open.drawer_content {
+        visibility: visible;
+        transform: translate3d(0, 0, 0);
+        transition: transform 0.3s ease;
+    }
+
+    .drawer_content {
+        position: fixed;
+        visibility: hidden;
+        z-index: 2000;
+        top: 0;
+        left: 0;
+        height: 100%;
+        max-width: 450px;
+        width: 100%;
+        background: white;
+        transform: translate3d(-100%, 0, 0);
+        transition: transform 0.3s ease, visibility 0s linear 1s;
+        display: flex;    
+        flex-direction: column;
+    }
+
+    div.active-icon {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border: 2px solid black;
+        background-color: black ;
+        border-radius: 100%;
+        margin-left: 10px;
+        animation-name: icon-transformation;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes icon-transformation {
+        0% {border-radius: 90%;}
+        50% {border-radius: 0%;}
+        100% {border-radius: 90%;}
+    }
+
+    .icon {
+        display: none;
+        visibility: hidden;
+        width: 5px;
+        height: 5px;
+        border: 2px solid black;
+        background-color: black;
+        border-radius: 100%;
+        margin-left: 10px;
+    }
+
+    li:hover .icon {
+        display: inline-block;
+        visibility: visible;
+        animation-name: icon-transformation;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        margin-right: 10px;
+    }
+
+    nav.is-open.drawer_content + main {
+        filter: blur(8px);
+    }
+
+    div#before-nav {
+        margin: 0px 10px;
+    }
+
+    i.fa-bars {
+        margin: 20px auto;
+    }
+
+    i.fa-xmark {
+        margin: 0px 0px 0px 95%;
+}
 }
