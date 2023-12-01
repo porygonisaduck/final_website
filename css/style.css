@@ -209,7 +209,7 @@ div.category {
 
 }
 
-div#cards {
+div.cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-self: center;
@@ -349,7 +349,7 @@ div#result-compiled h3 {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    div#cards {
+    div.cards {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
