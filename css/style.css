@@ -245,6 +245,28 @@ div#result-compiled img {
     aspect-ratio: auto;
 }
 
+div.category h2 {
+    display: inline-block;
+}
+
+div.category i:hover + p {
+    display: block;
+
+}
+
+div.category i {
+    margin: 0px 10px;
+}
+
+div.category p {
+    position: relative;
+    display: none;
+    background-color: rgb(190, 190, 190);
+    z-index: 0;
+    padding: 5px;
+    border-radius: 10px;
+}
+
 /* About Us */
 body {
     margin: 0px;
@@ -257,7 +279,7 @@ body {
     background-size: cover;
 }
 
-#about-main h2 {
+#about-main h1 {
     text-align: center;
     position: relative;
     color: white;
