@@ -132,7 +132,7 @@ div#switches {
     background-size: cover;
 }
 
-div#first-content {
+div.first-content {
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(3px);
     height: 100%;
@@ -162,7 +162,7 @@ main > h2 {
     text-align: center;
 }
 
-div#favorite {
+div.favorite {
     width: 80%;
     margin: auto;
     text-align: center;
@@ -170,14 +170,14 @@ div#favorite {
     grid-template-columns: 1fr 1fr;
 }
 
-div#favorite div {
+div.favorite div {
     padding: 20px;
 }
 
-div#favorite img {
+div.favorite img {
     object-fit: contain;
 }
-div#favorite a{
+div.favorite a{
     text-decoration: none;
     color: black;
 }
@@ -338,14 +338,14 @@ div#result-compiled h3 {
         grid-template-columns: 1fr 1fr;
     }
 
-    div#favorite {
+    div.favorite {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
 }
 
 @media (min-width: 992px) {
-    div#favorite {
+    div.favorite {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
